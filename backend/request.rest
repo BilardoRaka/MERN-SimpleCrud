@@ -1,0 +1,27 @@
+GET http://localhost:8080/users
+
+###
+GET http://localhost:8080/users/63e23722fc1c4fea512645a6
+
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "name": "Nadhiya",
+    "email": "Shabrina@gmail.com",
+    "gender": "Female"
+}
+
+###
+PATCH http://localhost:8080/users/63e23722fc1c4fea512645a6
+Content-Type: application/json
+
+{
+    "name": "Nadhiya Shabrina",
+    "email": "isalati@gmail.com",
+    "gender": "Female"
+}
+
+###
+DELETE http://localhost:8080/users/63e23722fc1c4fea512645a6
